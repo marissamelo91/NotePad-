@@ -16,13 +16,13 @@ NotePad- is a Progressive Web App (PWA) designed for taking and managing notes o
 * Uses IndexedDB for data storage.
 
 ## Installation
-* Clone the repository: git clone https://github.com/yourusername/notepad-pwa.git 
+* Clone the repository: git clone https://github.com/marissamelo91/NotePad-.git
 * Navigate to the project directory: cd notepad-pwa 
 * Install dependencies: npm install 
 
 ## Usage
 Start the development server: npm start 
-This will start the Webpack development server and you can view the app at http://localhost:8080.
+This will start the Webpack development server and you can view the app at http://localhost:3000.
 Build for production: npm run build
 
 
