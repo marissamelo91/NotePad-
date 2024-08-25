@@ -21,6 +21,7 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'NotePad-',
+        inject: true
       }),
       new WebpackPwaManifest({
         name: 'NotePad-',
@@ -62,7 +63,13 @@ module.exports = () => {
             }
           }
         },
-
+        {
+          test: /\.(png|jpeg|jpg|svg|gif|webp)$/i,
+          type: "asset/resource",
+          generator: {
+            filename: "images/[name].[hash][ext]",
+          },
+        }
       ],
     },
   };
